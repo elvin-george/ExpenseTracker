@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CategoryDetailActivity">
+
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detailed Breakdown for [Month Year]"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Category Totals (Category | Total Spent):"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/lvCategorySummary"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:background="@drawable/list_border"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Week for Detailed View:"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spWeekSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvWeeklyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weekly Transactions (Category: Amount | Date):"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/lvWeeklyExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

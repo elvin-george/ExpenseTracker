@@ -1,0 +1,19 @@
+// Project-level build.gradle (D:\Android\ExpenseTracker\build.gradle)
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+// *** CHANGE VERSION TO 7.3.0 ***
+    id 'com.android.application' version '7.3.0' apply false
+    id 'com.android.library' version '7.3.0' apply false
+}
+
+// *** DELETE THIS ENTIRE BLOCK ***
+/*
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+*/

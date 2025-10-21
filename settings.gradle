@@ -1,0 +1,26 @@
+// settings.gradle - FINAL CORRECT VERSION
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        // REPOSITORIES FOR EXTERNAL LIBRARIES
+        maven { url 'https://jitpack.io' }
+
+        // REPOSITORY FOR LOCAL AAR FILES (MPAndroidChart)
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+rootProject.name = "ExpenseTracker"
+include ':app'
